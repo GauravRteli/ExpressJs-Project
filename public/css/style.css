@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Piazzolla:opsz,wght@8..30,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Piazzolla";
+    font-size: large;
+    letter-spacing: 2px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+    background-color: rgb(40, 1, 65);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+
+.navbar{
+    background-color: rgb(40, 1, 65);
+    color: white;
+    line-height: 30px;
+}
+.navbar a{
+    color: white;
+}
+.navbar a:hover{
+    color: rgb(0, 99, 137);
+}
+.rotate{
+    transition: all linear;
+    animation: rot 1s linear infinite;
+}
+@keyframes rot{
+    0%{
+        font-size: 15px;
+    }
+    50%{
+        font-size: 20px;
+    }
+    100%{
+        font-size: 25;
+    }
+}

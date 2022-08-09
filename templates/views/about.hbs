@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    {{> navbar}}
+
+    <!-- content -->
+    <div class="container mt-3">
+      <div
+        class="row justify-content-between align-items-center"
+        style="min-height: 200px"
+        >
+        <div class="col-md-6 mb-md-0 mb-3 text-center">
+            <img src="./image.jpeg" class=" img-fluid rounded-3" style="height:500px; width: 250px; box-shadow:  0px 0px 20px 1px grey;" alt="">
+        </div>
+            <div class="col-md-6 mb-md-0 mb-3 text-center">
+                <p style="font-size: 30px;">JavaScript-<strong><span style="color: red; font-size: 30px;">Lover</span></strong></p>
+                <h1>Soon Going To Crack the best Company</h1>
+                <a href="/"
+                    ><button type="button" class="btn btn-outline-primary">
+                    Check Here
+                    </button></a
+                >
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    {{> footer}}
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

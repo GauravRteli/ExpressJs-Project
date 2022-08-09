@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Check</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    {{> navbar}}
+
+    <!-- content -->
+    <div class="container mt-3">
+      <div
+        class="row justify-content-between align-items-center"
+        style="height: 400px"
+      >
+        <div class="col-md-6 mb-md-0 mb-3">
+          <p style="font-size: 30px;">Welcome to <strong><span style="color:blue; font-size: 30px">Weather</span></strong> Page</p>
+          <h1>You Will Get Weather Update over here</h1>
+          <a href="./weather"
+            ><button type="button" class="btn btn-outline-primary">
+              Check Here
+            </button></a
+          >
+        </div>
+        <div class="col-md-6 mb-md-0 mb-3 text-center">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img
+                  src="https://clipground.com/images/weather-logo-8.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://openclipart.org/image/2400px/svg_to_png/18892/sivvus-weather-symbols-2.png`"
+                  class="d-block w-50"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="http://www.pngmart.com/files/3/Weather-PNG-Picture-420x240.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    {{> footer}}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
